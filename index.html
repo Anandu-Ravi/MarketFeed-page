@@ -33,7 +33,7 @@
           news, trends, and data from trusted sources, empowering you to make
           informed investment decisions.
         </p>
-       <a href="./register.html"  class="btn">Enroll Now</a>
+        <a href="./register.html" class="btn">Enroll Now</a>
       </div>
     </section>
 
@@ -157,11 +157,23 @@
     </footer>
 
     <script>
-      document
-        .querySelector(".mobile-menu-button")
-        .addEventListener("click", function () {
-          document.getElementById("nav-menu").classList.toggle("active");
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(".mobile-menu-button");
+        const navMenu = document.getElementById("nav-menu");
+        const navLinks = document.querySelectorAll("#nav-menu a");
+
+        // Toggle menu on button click
+        menuButton.addEventListener("click", function () {
+          navMenu.classList.toggle("active");
         });
+
+        // Close menu when a link is clicked
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            navMenu.classList.remove("active");
+          });
+        });
+      });
     </script>
   </body>
 </html>
