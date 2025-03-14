@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarketFeeds Webpage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="container header-content">
+        <div class="logo">MarketFeeds</div>
+        <nav>
+          <button class="mobile-menu-button">☰</button>
+          <ul id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <h1>Welcome to MarketFeeds</h1>
+        <p>
+          Stay ahead of the market curve with MarketFeeds, your ultimate source
+          for real-time market insights and analysis. Our platform aggregates
+          news, trends, and data from trusted sources, empowering you to make
+          informed investment decisions.
+        </p>
+       <a href="./register.html"  class="btn">Enroll Now</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title">Key Features</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">✓</div>
+            <h3>Daily Market Analysis</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+              odio illo voluptatibus, quas beatae eveniet ipsam nobis. Ratione
+              saepe reiciendis magnam rerum veniam inventore repudiandae
+              voluptatem laudantium temporibus! Est
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>News Reports</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+              odio illo voluptatibus, quas beatae eveniet ipsam nobis. Ratione
+              saepe reiciendis magnam rerum veniam inventore repudiandae
+              voluptatem laudantium temporibus! Est
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💹</div>
+            <h3>Future Trends</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam
+              odio illo voluptatibus, quas beatae eveniet ipsam nobis. Ratione
+              saepe reiciendis magnam rerum veniam inventore repudiandae
+              voluptatem laudantium temporibus! Est
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1645226880663-81561dcab0ae?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="stock-image"
+            />
+          </div>
+          <div class="about-text">
+            <h3>Our Story</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. A
+              consequuntur beatae, accusamus earum voluptate architecto
+              doloremque numquam debitis tempora neque. Lorem ipsum dolor sit
+              amet consectetur, adipisicing elit. Fugiat mollitia earum
+              temporibus magni amet necessitatibus aut labore maxime distinctio
+              minima esse quae, fugit eligendi nobis reprehenderit ipsam sed
+              tenetur velit.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eum
+              doloribus optio necessitatibus sunt aliquid. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Quos ullam odio, reiciendis
+              repellendus error dolorum atque. Asperiores illum consequatur
+              distinctio odit inventore excepturi perferendis, odio, deserunt
+              pariatur labore ipsum laudantium!
+            </p>
+            <a href="#contact" class="btn">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>MarketFeeds</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Blanditiis, harum.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+              <li>Marketfeeds</li>
+              <li>Trivandrum</li>
+              <li>marketfeeds@example.com</li>
+              <li>+91 5873967970</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 MarketFeeds. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector(".mobile-menu-button")
+        .addEventListener("click", function () {
+          document.getElementById("nav-menu").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
